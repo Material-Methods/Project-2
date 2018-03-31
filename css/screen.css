@@ -122,7 +122,7 @@ h2 {
 h3 {
   text-transform: uppercase;
   font-weight: bold;
-  background-color: #93A341;
+  background-color: #2e7c31;
   padding: 0.5em 0 0.5em 0.3em;
   margin-bottom: 0.2em;
 }
@@ -141,7 +141,7 @@ h4 {
 
 html {
   /* Border for the nav to sit on */
-  border-top: 2.6875em solid #93A341; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
+  border-top: 2.6875em solid #2e7c31; /* ~ 43px @ 16px/em | 43 = 12 + 19 + 12 from nav */
 }
 nav {
   position: absolute;
@@ -202,7 +202,7 @@ nav {
   line-height: 1;
   padding: 0.6315789474em 0.3157894737em; /* ~ 12px 6px @ 19px/em */
   color: #333;
-  background-color: #93A341;
+  background-color: #2e7c31;
   border-bottom: 0;
 }
 
@@ -256,7 +256,7 @@ nav {
 }
 
 .preview {
-  background-color: #93A341;
+  background-color: #2e7c31;
   color: #222;
   padding-top: 1.2631578947em;
   margin-right: -11.3208%; /* 60px / 530px (650-120) */
@@ -310,7 +310,7 @@ table, th, td {
 	padding: 0px 10px;
 }
 .tablehead {
-	background-color: #93A341;
+	background-color: #2e7c31;
 	text-align: center;
   font-weight: 700;
 }
