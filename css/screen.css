@@ -154,7 +154,7 @@ nav {
   margin-top: 2.5263157895em;
 }
 
-nav li ul {
+#nav-proj-list {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
