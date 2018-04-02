@@ -154,6 +154,13 @@ nav {
   margin-top: 2.5263157895em;
 }
 
+nav li ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 480px;
+}
+
 /* ========== Modules ========== */
 
 /* Header & Footer */
