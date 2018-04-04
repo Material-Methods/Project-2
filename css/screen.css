@@ -156,9 +156,10 @@ nav {
 
 #nav-proj-list {
   display: flex;
+  padding: 0;
   flex-direction: column;
   justify-content: space-between;
-  width: 480px;
+  width: 35em;
 }
 
 /* ========== Modules ========== */
@@ -194,6 +195,7 @@ nav {
   font-weight: 200;
 }
 .nav {
+  position: relative;
   margin-left: 0;
   padding-bottom: 0;
 }
