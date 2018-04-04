@@ -123,8 +123,8 @@ h3 {
   text-transform: uppercase;
   font-weight: bold;
   background-color: #83c6ff;
+  margin: 0 -9.2308vw 0.2em -9.2308vw; /* Negate html padding on mobile */
   padding: 0.5em 0 0.5em 0.3em;
-  margin-bottom: 0.2em;
 }
 
 h4 {
@@ -299,19 +299,19 @@ nav {
 }
 
 
-/* Table */
+/* Table - full width on mobile */
 table {
-	table-layout: fixed;
-	width: 750px;
-  margin-bottom: 1em;
+  table-layout: fixed;
+  width: 100vw;
+  margin: 0 -9.2308vw 1em -9.2308vw; /* Negate html padding on mobile */
 }
 table, th, td {
-	border: 1px solid #59453C;
-	padding: 0px 10px;
+  border: 1px solid #59453C;
+  padding: 0px 5px;
 }
 .tablehead {
-	background-color: #83c6ff;
-	text-align: center;
+  background-color: #83c6ff;
+  text-align: center;
   font-weight: 700;
 }
 .tabletitle {
@@ -323,48 +323,46 @@ table, th, td {
   margin-bottom: 0;
 }
 tr .firstrow {
-	border-right: none;
-	width: 75px;
+  border-right: none;
+  width: 75px;
 }
 tr .secondrow {
-	text-align: left;
+  text-align: left;
 }
 td a {
-	font-weight: 700;
-	text-align: center;
+  font-weight: 700;
+  text-align: center;
 }
 td {
-	text-align: center;
+  text-align: center;
+  font-size: 1rem;
 }
 .nobullet {
   list-style: none;
 }
 .alignleft {
-	text-align: left;
+  text-align: left;
   padding-top: 5px;
 }
 .short {
   width: 120px;
 }
 .redfont {
-	color: red;
+  color: red;
 }
 .darkredfont {
   color: #d70000;
 }
 #tablep {
-	width: 80%
+  width: 80%
 }
 .addeventstc {
-	margin: 10px;
-	margin-left: 30%;
-	margin-right: 30%;
-}
-#h3wide {
-  width: 750px;
+  margin: 10px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
-/* Policies */ 
+/* Policies */
 
 .indent {
   margin-left: 2em;
@@ -478,7 +476,7 @@ td {
     width: 42.5%;
     margin-right: 0;
   }
-  
+
   #essential-references {
     position: absolute;
     top: 0px;
@@ -489,6 +487,13 @@ td {
 }
 
 @media screen and (min-width: 804px) {
+  table {
+    width: 750px;
+    margin: 0 0 1em 0; /* Normal table margins */
+  }
+  h3 {
+    margin: 0 0 0.2em 0; /* Normal h3 margins */
+  }
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
