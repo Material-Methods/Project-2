@@ -210,27 +210,31 @@ nav {
 
 /* Expandable Sections */
 .accordion {
-  background-color: #eee;
-  color: #444;
+  background-color: #83c6ff;
+  color: #333;
   cursor: pointer;
-  padding: 18px;
+  padding: 1.2631578947em;
   width: 100%;
   text-align: left;
   border: none;
   outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
   transition: 0.4s;
 }
 
 .active, .accordion:hover {
-  background-color: #ccc;
+  background-color: #FFCE0B;
 }
 
 .panel {
-  padding: 0 18px;
+  padding: 0 1.2631578947em;
   background-color: white;
   display: none;
   overflow: hidden;
 }
+
+/* Navigation */
 
 #calendar #nav-cal a,
 #projects #nav-pro a,

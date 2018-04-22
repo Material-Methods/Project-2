@@ -10,6 +10,14 @@
             } else {
                 panel.style.display = "block";
             }
+            for (var j = 0; j < expandables.length; j++) {
+                var item = expandables[j];
+                if(!this.isEqualNode(item) && item.classList.contains("active")) {
+                    item.classList.toggle("active");
+                    var itemPanel = item.nextElementSibling;
+                    itemPanel.style.display = "none";
+                }
+            }
         });
     }
 
