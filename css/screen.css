@@ -190,6 +190,7 @@ small,
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
   text-transform: uppercase;
 }
+
 /* Navigation */
 nav {
   font-weight: 200;
@@ -213,6 +214,30 @@ nav {
   color: #333;
   background-color: #83c6ff;
   border-bottom: 0;
+}
+
+/* Expandable Sections */
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #ccc;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
 
 #calendar #nav-cal a,
