@@ -228,7 +228,7 @@ nav {
 }
 
 .panel {
-  padding: 0 1.2631578947em;
+  padding: 1.2631578947em 1.2631578947em;
   background-color: white;
   display: none;
   overflow: hidden;
