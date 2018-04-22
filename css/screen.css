@@ -154,14 +154,6 @@ nav {
   margin-top: 2.5263157895em;
 }
 
-#nav-proj-list {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35em;
-}
-
 /* ========== Modules ========== */
 
 /* Header & Footer */
