@@ -333,6 +333,7 @@ nav {
 table {
   table-layout: fixed;
   width: 100vw;
+  box-sizing: border-box;
   margin: 0 -9.2308vw 1em -9.2308vw; /* Negate html padding on mobile */
 }
 table, th, td {
@@ -527,4 +528,58 @@ td {
   .flexbox .agenda > ol {
     display: flex; /* My life for element/container queries...*/
   }
+}
+
+/* Apply mobile specific table overrides to due dates */
+/* (Much simpler than applying by default and trying to revert on desktop) */
+@media screen and (max-width: 803px) {
+  /* Force table to not be like tables anymore */
+  table#due-dates, table#due-dates td, table#due-dates tr {
+    display: block;
+  }
+
+  /* Remove table padding */
+  table#due-dates, table#due-dates ol {
+    padding: 0px;
+  }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+  table#due-dates .tablehead {
+    position: absolute;
+    top: -9999px;
+    left: -9999px;
+  }
+
+  /* Add table row border */
+  table#due-dates tr {
+    border: solid 1px black;
+  }
+
+  table#due-dates td {
+    /* Behave  like a "row" */
+    border: none;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding: 5px 5px 5px 6em;
+  }
+
+  table#due-dates td:before {
+    /* Now like a table header */
+    position: absolute;
+    /* Top/left values mimic padding */
+    top: 5px;
+    left: 5px;
+    text-align: left;
+    width: 3em;
+    padding-right: 10px;
+    white-space: nowrap;
+  }
+
+  /*
+  Label the data
+  */
+  table#due-dates td:nth-of-type(1):before { content: "Date"; }
+  table#due-dates td:nth-of-type(2):before { content: "Topics"; }
+  table#due-dates td:nth-of-type(3):before { content: "Reading"; }
 }
