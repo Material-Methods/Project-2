@@ -154,14 +154,6 @@ nav {
   margin-top: 2.5263157895em;
 }
 
-#nav-proj-list {
-  display: flex;
-  padding: 0;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 35em;
-}
-
 /* ========== Modules ========== */
 
 /* Header & Footer */
@@ -190,6 +182,7 @@ small,
   font-size: 0.744018483em; /* ~ 19px @ 25.537px/em */
   text-transform: uppercase;
 }
+
 /* Navigation */
 nav {
   font-weight: 200;
@@ -214,6 +207,34 @@ nav {
   background-color: #83c6ff;
   border-bottom: 0;
 }
+
+/* Expandable Sections */
+.accordion {
+  background-color: #83c6ff;
+  color: #333;
+  cursor: pointer;
+  padding: 1.2631578947em;
+  width: 100%;
+  text-align: left;
+  border: none;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  transition: 0.4s;
+}
+
+.active, .accordion:hover {
+  background-color: #FFCE0B;
+}
+
+.panel {
+  padding: 1.2631578947em 1.2631578947em;
+  background-color: white;
+  display: none;
+  overflow: hidden;
+}
+
+/* Navigation */
 
 #calendar #nav-cal a,
 #projects #nav-pro a,
