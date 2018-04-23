@@ -332,7 +332,6 @@ nav {
 /* Table - full width on mobile */
 table {
   table-layout: fixed;
-  width: 100vw;
   box-sizing: border-box;
   margin: 0 -9.2308vw 1em -9.2308vw; /* Negate html padding on mobile */
 }
